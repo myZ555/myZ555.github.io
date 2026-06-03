@@ -19,6 +19,7 @@
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "install-plugins": "npx tsx ./quartz/plugins/loader/install-plugins.ts",
+    "deploy": "python3 publish.py && git add . && git commit -m 'auto update' && git push origin main",
     "prebuild": "npm run install-plugins"
   },
   "engines": {

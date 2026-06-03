@@ -2,7 +2,7 @@
 # Template: default
 # A clean Quartz setup with sensible defaults.
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: 课程🗂️
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
