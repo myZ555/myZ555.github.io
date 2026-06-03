@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+# 💡 核心修复：加入这行全局环境变量，直接给 GitHub Actions 升级，消灭警告
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 permissions:
   contents: read
   pages: write
@@ -43,7 +47,7 @@ jobs:
         run: npm ci
 
       - name: Install Quartz Plugins
-        run: npx quartz plugin install   # 👈 核心修复：让云端自动生成 .quartz/plugins 文件夹
+        run: npx quartz plugin install
 
       - name: Build Quartz
         run: npx quartz build

@@ -9,19 +9,16 @@ VAULT_DIR = "/Users/mingyu/Documents/课程🗂️"  # 👈 换成你Obsidian主
 CONTENT_DIR = "./content"
 ATTACH_DIR = os.path.join(CONTENT_DIR, "attachments")
 
-# 1. 彻底清空并重建网站的缓存目录，确保过期的公开笔记能被彻底删除
 if os.path.exists(CONTENT_DIR):
     shutil.rmtree(CONTENT_DIR)
 os.makedirs(ATTACH_DIR, exist_ok=True)
 
-print("🚀 开始全库扫描，正在安全筛选公开笔记...")
+print("🚀 正在 1:1 完美复刻 Obsidian 原生文件夹层级...")
 
 published_files = []
 
-# 2. 扫描 Obsidian 全库，只抓取带 publish: true 的 Markdown 文件
 for root, dirs, files in os.walk(VAULT_DIR):
-    # 忽略 Obsidian 自身的隐藏点文件夹
-    if ".obsidian" in root:
+    if ".obsidian" in root or ".git" in root:
         continue
     for file in files:
         if file.endswith(".md"):
@@ -29,41 +26,39 @@ for root, dirs, files in os.walk(VAULT_DIR):
             try:
                 with open(file_path, "r", encoding="utf-8") as f:
                     content = f.read()
-                    # 正则匹配顶部 Frontmatter 是否包含 publish: true
                     if re.search(r"^publish:\s*true", content, re.MULTILINE):
-                        # 统一扁平化复制到 content 根目录，Quartz 能完美识别彼此的双链
-                        dest_path = os.path.join(CONTENT_DIR, file)
+                        # 💡 核心改动：直接计算相对路径，不添加任何多余的父级包裹
+                        rel_path = os.path.relpath(file_path, VAULT_DIR)
+                        dest_path = os.path.join(CONTENT_DIR, rel_path)
+                        
+                        # 自动在网站里创建一模一样的子文件夹结构
+                        os.makedirs(os.path.dirname(dest_path), exist_ok=True)
                         shutil.copy2(file_path, dest_path)
                         published_files.append(dest_path)
-                        print(f"  ✓ [发现公开笔记]: {file}")
+                        print(f"  ✓ [同步成功]: {rel_path}")
             except Exception:
                 pass
 
-# 3. 建立全库的附件（图片/PDF）索引，用于精准抓取
+# 自动抓取附件逻辑
 asset_index = {}
 for root, dirs, files in os.walk(VAULT_DIR):
     if ".obsidian" in root or "node_modules" in root:
         continue
     for file in files:
-        if not file.endswith(".md"):  # 收集所有图片、PDF 等
+        if not file.endswith(".md"):
             asset_index[file] = os.path.join(root, file)
 
-# 4. 分析公开笔记，把里面真正引用到的图片连带打包带走
 wiki_link_regex = re.compile(r"!\[\[(.*?)\]\]")
-
 for file_path in published_files:
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
-    
     matches = wiki_link_regex.findall(content)
     for asset_name in matches:
-        # 切除可能存在的别名（如 ![[pic.png|100]]）
         pure_name = asset_name.split("|")[0].strip()
         if pure_name in asset_index:
             src_asset = asset_index[pure_name]
             dest_asset = os.path.join(ATTACH_DIR, pure_name)
             if not os.path.exists(dest_asset):
                 shutil.copy2(src_asset, dest_asset)
-                print(f"    └─ 📎 [自动打包附件]: {pure_name}")
 
-print("\n✨ 提取完成！本地部署缓存区已准备就绪。")
+print("\n✨ 1:1 数据同步及附件抓取完全成功！")
