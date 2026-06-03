@@ -18,7 +18,8 @@ print("🚀 正在 1:1 完美复刻 Obsidian 原生文件夹层级...")
 published_files = []
 
 for root, dirs, files in os.walk(VAULT_DIR):
-    if ".obsidian" in root or ".git" in root:
+    # 过滤掉隐藏文件夹和博客自身的目录，防止无限套娃
+    if ".obsidian" in root or ".git" in root or "my-blog" in root or "node_modules" in root:
         continue
     for file in files:
         if file.endswith(".md"):
@@ -26,23 +27,28 @@ for root, dirs, files in os.walk(VAULT_DIR):
             try:
                 with open(file_path, "r", encoding="utf-8") as f:
                     content = f.read()
-                    if re.search(r"^publish:\s*true", content, re.MULTILINE):
-                        # 💡 核心改动：直接计算相对路径，不添加任何多余的父级包裹
-                        rel_path = os.path.relpath(file_path, VAULT_DIR)
-                        dest_path = os.path.join(CONTENT_DIR, rel_path)
+                    if re.search(r"^(dg-)?publish:\s*true", content, re.MULTILINE):
                         
-                        # 自动在网站里创建一模一样的子文件夹结构
+                        # 💡 核心拦截规则：如果是主页，无视它原本在哪个子文件夹，强行提到全站根目录
+                        if file.lower() == "index.md":
+                            dest_path = os.path.join(CONTENT_DIR, "index.md")
+                            print(f"  👑 [总门户拦截成功]: {os.path.relpath(file_path, VAULT_DIR)} -> 全站首页")
+                        else:
+                            # 其他笔记依然保持 1:1 的原生跨库层级
+                            rel_path = os.path.relpath(file_path, VAULT_DIR)
+                            dest_path = os.path.join(CONTENT_DIR, rel_path)
+                            print(f"  ✓ [跨库同步]: {rel_path}")
+                        
                         os.makedirs(os.path.dirname(dest_path), exist_ok=True)
                         shutil.copy2(file_path, dest_path)
                         published_files.append(dest_path)
-                        print(f"  ✓ [同步成功]: {rel_path}")
-            except Exception:
-                pass
+            except Exception as e:
+                print(f"  ❌ 读取失败 {file}: {str(e)}")
 
-# 自动抓取附件逻辑
+# 自动抓取多库附件逻辑
 asset_index = {}
 for root, dirs, files in os.walk(VAULT_DIR):
-    if ".obsidian" in root or "node_modules" in root:
+    if ".obsidian" in root or "my-blog" in root or "node_modules" in root:
         continue
     for file in files:
         if not file.endswith(".md"):
@@ -61,4 +67,4 @@ for file_path in published_files:
             if not os.path.exists(dest_asset):
                 shutil.copy2(src_asset, dest_asset)
 
-print("\n✨ 1:1 数据同步及附件抓取完全成功！")
+print("\n✨ 跨库合流及总主页定位完全成功！")
