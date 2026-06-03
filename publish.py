@@ -3,7 +3,7 @@ import re
 import shutil
 
 # ==================== 【请在这里修改你的路径】 ====================
-VAULT_DIR = "/Users/mingyu/Documents/课程🗂️"  # 👈 换成你Obsidian主库的绝对路径
+VAULT_DIR = "/Users/mingyu/Documents"  # 👈 换成你Obsidian主库的绝对路径
 # ================================================================
 
 CONTENT_DIR = "./content"
