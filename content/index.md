@@ -1,16 +1,17 @@
 ---
-dg-publish: true
-tags:
-  - 预防医学
+publish: true
 ---
+# 🪐 数字花园
+欢迎来到我的学习笔记库！
 
-# 索引
+> [!abstract] Academic MOC 
+>  ### 分类 
+> #解剖 | #生理 | #病理 | #病理生理 | #药理 | #免疫 | #诊断 | #治疗学 |  #内科 | #外科 | #神经病学 | #精神病学 | #中医学 | #预防医学 
+>  ### 定位
+>  #循环系统 | #呼吸系统 | #消化系统 | #泌尿系统 | #血液系统 | #内分泌系统 | #神经系统 | #运动系统 | #风湿免疫 
+ 
+ > [!quote] 杂七杂八
+ > - 💡 #漫谈
+ > - 🎮 #Sandbox
 
-```dataview
-TABLE
-  file.tags as "标签",
-  file.mtime as "最后更新"
-FROM ""
-WHERE file.folder = this.file.folder AND file.name != this.file.name
-SORT file.ctime ASC
-```
+
