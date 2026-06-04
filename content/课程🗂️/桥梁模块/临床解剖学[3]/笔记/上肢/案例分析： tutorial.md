@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+publish: true
 commit: true
 date: 2025-10-14
 ---

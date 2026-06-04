@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+publish: true
 Teacher1: 赵经纬
 commit: true
 date: 2025-10-09

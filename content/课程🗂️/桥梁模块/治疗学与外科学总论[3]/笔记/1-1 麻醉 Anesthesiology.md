@@ -1,6 +1,6 @@
 ---
 Teacher: 郁丽娜
-dg-publish: true
+publish: true
 commit: true
 date: 2025-09-16
 ---
