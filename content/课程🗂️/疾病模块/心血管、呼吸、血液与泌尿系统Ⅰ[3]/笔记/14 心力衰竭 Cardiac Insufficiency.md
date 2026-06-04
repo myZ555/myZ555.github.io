@@ -1,8 +1,9 @@
 ---
 publish: true
+tags:
+  - 病理生理
+  - 循环系统
 ---
-#循环系统 #病理生理 
-
 ##### 有效循环血量的三个决定因素
 1. 足够的血容量
 2. 正常的血管舒缩功能
@@ -13,9 +14,8 @@ publish: true
 - 进行性病变，起始后即开始不断发展。主要病因随疾病谱而变化
 ---
 # 一、病因与诱因
-![400](Pasted%20image%2020250328212211.png)
+
 ### 1. 心衰的病因 etiology
-![450](Pasted%20image%2020250328212239.png)
 ###### 1）心肌收缩性降低
 - 心肌收缩性是指不依赖于心脏前、后负荷的、心肌本身的收缩特性
 - 心肌结构受损或心肌能量代谢障碍，可引起心肌收缩能力下降
@@ -66,15 +66,15 @@ publish: true
 ###### 1）感染
 - 各种感染是心衰**最常见诱因**，其中呼吸系统感染占首位
 - 无论是风心、肺心、高心、冠心病，只要并发感染，无论是肺部感染、胆道感染还是泌尿道感染，均可诱发心衰。
-- 感染诱发心衰的主要机制![500](Pasted%20image%2020250328213142.png)
+- 感染诱发心衰的主要机制![[感染诱发心衰的机制.png|500]]
 ---
 ###### 2）心律失常
 - 室上性心动过速、伴有快速心室律的房颤和房扑等**快速型心律失常**，既可 作为心衰的基本病因，同时也是心衰的常见诱因
-- 心律失常诱发心衰的机制![500](Pasted%20image%2020250328213221.png)
+- 心律失常诱发心衰的机制![[心律失常诱发心衰的机制.png|500]]
 ---
 ###### 3）妊娠和分娩
 - 患者往往具有风湿性心脏病、先天性心脏病、高血压心脏病、病毒性心肌炎 等基础病因
-- 妊娠和分娩诱发心力衰竭的机制![550](Pasted%20image%2020250328213259.png)
+- 妊娠和分娩诱发心力衰竭的机制![[妊娠和分娩诱发心衰的机制.png|550]]
 ---
 ###### 4）水、电解质紊乱和酸碱平衡失调
 - 血容量增加：输液过量或过速，促进水钠潴留的药物
@@ -102,7 +102,7 @@ publish: true
 ##### 按左室射血分数分类
 Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastolic volume
 静息状态为55-70%
-![500](Pasted%20image%2020250328213756.png)
+![[按左室射血分数分类.png|500]]
 **收缩性心力衰竭**：
 - 常见原因：冠心病，心肌病等引起心肌收缩力降低
 - 特点：左室射血分数显著降低，小于30%患者预后差
@@ -123,7 +123,7 @@ Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastol
 
 ---
 ##### 按病变程度分类
-[](15%20Cardiac%20Insufficiency_2025Mar_update.pdf#page=24&selection=82,0,99,4|15%20Cardiac%20Insufficiency_2025Mar_update,%20页面%2024)
+[[15 Cardiac Insufficiency_2025Mar_update.pdf#page=24&selection=82,0,99,4|15 Cardiac Insufficiency_2025Mar_update, 页面 24]]
 
 ---
 ##### 按发生速度分类
@@ -139,17 +139,17 @@ Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastol
 
 > **心力储备（cardiac reserve）：心率、前后负荷、心肌收缩性**
 
-[](15%20Cardiac%20Insufficiency_2025Mar_update.pdf#page=27&selection=0,0,2,15|15%20Cardiac%20Insufficiency_2025Mar_update,%20页面%2027)
+[[15 Cardiac Insufficiency_2025Mar_update.pdf#page=27&selection=0,0,2,15|15 Cardiac Insufficiency_2025Mar_update, 页面 27]]
 
 > **心衰时机体的代偿反应**
 
-[](15%20Cardiac%20Insufficiency_2025Mar_update.pdf#page=28&selection=4,0,5,7|15%20Cardiac%20Insufficiency_2025Mar_update,%20页面%2028)
+[[15 Cardiac Insufficiency_2025Mar_update.pdf#page=28&selection=4,0,5,7|15 Cardiac Insufficiency_2025Mar_update, 页面 28]]
 
 ---
 ### 1. 神经-体液调节机制激活
 ==神经-体液调节机制是调节心内心外代偿的基本机制， 其失衡是心衰的关键途径==
 ###### 1）交感-肾上腺髓质系统兴奋性增高
-![400](Pasted%20image%2020250328214733.png)
+![[Pasted image 20250328214733.png|400]]
 
 **交感神经系统兴奋性增高的意义？**
 - 4:1的A与NA：调节心肌收缩性、心率、心排血量、外周血管
@@ -180,15 +180,15 @@ Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastol
 - 心室肌细胞受牵拉释放BNP
 - 心衰时，血浆BNP、NT-proBNP含量升高，且与心功能分级呈显著正相关，可用于诊断与评估
 ###### 4）其他体液活性物质的变化
-[](15%20Cardiac%20Insufficiency_2025Mar_update.pdf#page=35&selection=1,1,1,12|15%20Cardiac%20Insufficiency_2025Mar_update,%20页面%2035)
+[[15 Cardiac Insufficiency_2025Mar_update.pdf#page=35&selection=1,1,1,12|15 Cardiac Insufficiency_2025Mar_update, 页面 35]]
 
 ---
 ### 2. 心脏本身的代偿反应
-![400](Pasted%20image%2020250328215309.png)
+![[Pasted image 20250328215309.png|400]]
 
 ---
 ###### 1）心率加快
-![400](Pasted%20image%2020250328215527.png)
+![[Pasted image 20250328215527.png|400]]
 
 - **心率加快的代偿意义**
 	- 动员迅速，见效迅速，贯穿始终
@@ -209,7 +209,7 @@ Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastol
 	- 肌节长度若超过3.6 μm，粗、细肌丝无法重叠，丧失收缩能力
 ---
 ###### 3）心肌收缩性增强
-![500](Pasted%20image%2020250329090904.png)
+![[Pasted image 20250329090904.png|500]]
 ###### 4）心室重塑
 - 定义：心肌损伤或负荷增加时，心肌组织在结构、代谢、功能等方面 所发生的代偿适应性变化
 - 表现：
@@ -278,7 +278,7 @@ Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastol
 ### （一）心肌==收缩==功能降低
 > 正常心肌收缩的分子基础（“球动想盖”）
 
-[](15%20Cardiac%20Insufficiency_2025Mar_update.pdf#page=54&selection=0,0,3,2|15%20Cardiac%20Insufficiency_2025Mar_update,%20页面%2054)
+[[15 Cardiac Insufficiency_2025Mar_update.pdf#page=54&selection=0,0,3,2|15 Cardiac Insufficiency_2025Mar_update, 页面 54]]
 ###### 1. 心肌收缩成分减少
 
 - 多种心肌损伤因素导致**心肌细胞数量减少（量变）**
@@ -309,7 +309,7 @@ Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastol
 ###### 3. 心肌兴奋-收缩耦联障碍
 
 **1. 心肌细胞Ca2+转运障碍**
-![500](Pasted%20image%2020250329093655.png)
+![[Pasted image 20250329093655.png|500]]
 **2. 心肌对交感神经系统的反应性降低**
 - *心肌组织中去甲肾上腺素释放减少*：
 	- ①慢性心功能降低引起交感持续兴奋， 致使心交感神经末梢储存的NA耗竭；
@@ -365,7 +365,7 @@ Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastol
 	4. 紫绀（cyanosis）：最早见于指端、口唇和耳廓，较左心衰明显
 	5. 肝肿大及肝功能损害：长期心衰造成心源性肝硬化
 > 体循环静脉充盈 静脉压、毛细血管血压升高 内脏充血、功能障碍 低蛋白血症 水肿
-[](15%20Cardiac%20Insufficiency_2025Mar_update.pdf#page=71&selection=53,0,61,2|15%20Cardiac%20Insufficiency_2025Mar_update,%20页面%2071)
+[[15 Cardiac Insufficiency_2025Mar_update.pdf#page=71&selection=53,0,61,2|15 Cardiac Insufficiency_2025Mar_update, 页面 71]]
 ---
 2. **肺循环淤血（左心衰）**
 - *呼吸困难*（dyspnea）是肺淤血、肺水肿的共同表现，是左心衰最早和最 常见的症状。肺顺应性降低、气道阻力增大、肺间质压力增高
@@ -374,7 +374,7 @@ Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastol
 	- 端坐呼吸（orthopnea）：采用被动体位缓解平卧带来的问题
 	- 急性肺水肿（acute pulmonary edema）：急性左心衰，粉红色泡沫痰
 > 73 Quality of life in patients with acute heart failure
-[](15%20Cardiac%20Insufficiency_2025Mar_update.pdf#page=73&selection=0,2,2,52|15%20Cardiac%20Insufficiency_2025Mar_update,%20页面%2073)
+[[15 Cardiac Insufficiency_2025Mar_update.pdf#page=73&selection=0,2,2,52|15 Cardiac Insufficiency_2025Mar_update, 页面 73]]
 
 ---
 # 六、防治的病理生理基础
@@ -390,7 +390,7 @@ Left ventricular ejection fraction = 100 ×stroke volume/ventricular end diastol
 	- 吸氧；严重心力衰竭或急性心肌梗塞伴有休克的病人间断应用高压氧治疗
 	- 给予能量合剂、葡萄糖、氯化钾等以改善心肌代谢
 - 心脏移植（heart transplantation）或人工心脏
-![Pasted image 20250329094821](Pasted%20image%2020250329094821.png)
+![[Pasted image 20250329094821.png]]
 
 ---
 # 重难点&小结

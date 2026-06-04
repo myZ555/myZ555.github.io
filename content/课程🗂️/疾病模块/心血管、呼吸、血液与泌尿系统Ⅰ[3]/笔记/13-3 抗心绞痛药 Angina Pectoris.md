@@ -1,9 +1,10 @@
 ---
 publish: true
+tags:
+  - 循环系统
+  - 药理
 ---
-#循环系统 #药理 
-
-[](Pharmacology%20of%20BMS1_药理_zsy_net.pdf#page=21&selection=82,0,84,1|Pharmacology%20of%20BMS1_药理_zsy_net,%20页面%2021)
+[[BMS1_Pharmacology.pdf#page=21&selection=82,0,84,1|Pharmacology of BMS1_药理_zsy_net, 页面 21]]
 ##### 重难点
 - 掌握：
 	1. 抗心绞痛药的分类和代表药物
@@ -23,16 +24,17 @@ publish: true
 	- 心绞痛的分类
 	- 影响心肌耗氧量和冠状动脉供血的因素
 #### Overview
-1. What's Angina pectoris?           [](14-3%20抗心绞痛药.pdf#page=2&selection=4,3,4,25|14-3%20抗心绞痛药,%20页面%202)
+1. What's Angina pectoris?           [[20250321抗心绞痛药.pdf#page=2&selection=4,3,4,25|14-3 抗心绞痛药, 页面 2]]
 2. Causes and the classification of angina pectoris
-	- [](Pharmacology%20of%20BMS1_药理_zsy_net.pdf#page=21&selection=100,0,100,9|Pharmacology%20of%20BMS1_药理_zsy_net,%20页面%2021)
+	- [[BMS1_Pharmacology.pdf#page=21&selection=100,0,100,9|Pharmacology of BMS1_药理_zsy_net, 页面 21]]
 	1. *Atheromatous* obstruction of the large coronary vessels (atherosclerotic angina, classic angina, effort angina)
 	2. *spontaneous* angina pectoris（自发性心绞痛）, include Angina Pectoris Decubitus（卧位型心绞 痛）, variant angina （变异型心绞痛）, 中间综 合征、梗死后心绞痛
 	3. Mixed pattern of angina    初发型、恶化型、自发性心绞痛，统称为不稳定型心绞痛
 3. Primary cause of angina pectoris
 	1. In classic angina, the imbalance occurs when the myocardial oxygen requirement increases; **“angina of effort”**
-	2. In variant angina, oxygen delivery decreases as a result of reversible coronary vasospasm. **“vasospastic or Prinzmetal's angina”****![350](Pasted%20image%2020250325080815.png)
-临床上将影响耗氧量的主要因素简化为“三项 乘积”（收缩压×心率×左心室射血时间）或 “二项乘积”（收缩压×心率）作为粗略估计 心肌耗氧量的指标![450](Pasted%20image%2020250325080912.png)
+	2. In variant angina, oxygen delivery decreases as a result of reversible coronary vasospasm. **“vasospastic or Prinzmetal's angina”
+
+临床上将影响耗氧量的主要因素简化为“三项 乘积”（收缩压×心率×左心室射血时间）或 “二项乘积”（收缩压×心率）作为粗略估计心肌耗氧量的指标
 4. Determinants of vascular tone (relax)
 	1. increasing cGMP
 	2. decreasing intracellular $Ca^{2+}$
@@ -49,14 +51,14 @@ publish: true
 ---
 # I. Basic pharmacology of drugs used to treat angina
 ### Drug action in angina
-[](Pharmacology%20of%20BMS1_药理_zsy_net.pdf#page=21&selection=173,1,174,31|Pharmacology%20of%20BMS1_药理_zsy_net,%20页面%2021)
+[[BMS1_Pharmacology.pdf#page=21&selection=173,1,174,31|Pharmacology of BMS1_药理_zsy_net, 页面 21]]
 - Decrease myocardial oxygen requirement (decrease heart rate, ventricular volume, blood pressure, and contractility)
 - Redistribution of coronary flow (increase oxygen delivery to ischemic tissue.)
 - Increase myocardial oxygen delivery (reversing coronary arterial spasm.)
 ---
 ### 1. Nitrates & Nitrites
 
-[](Pharmacology%20of%20BMS1_药理_zsy_net.pdf#page=21&selection=217,1,221,0|Pharmacology%20of%20BMS1_药理_zsy_net,%20页面%2021)
+[[BMS1_Pharmacology.pdf#page=21&selection=217,1,221,0|Pharmacology of BMS1_药理_zsy_net, 页面 21]]
 ###### 1. Pharmacokinetics
 - Low oral bioavailability
 - *Sublingual* is normally used. Transdermal and buccal absorption from slow release preparations.
@@ -80,7 +82,7 @@ publish: true
 ###### 3. Mechanisms of action in smooth muscle
 
 - NO的生成不依赖内皮细胞
-- [](14-3%20抗心绞痛药.pdf#page=19&selection=52,0,52,19|14-3%20抗心绞痛药,%20页面%2019)
+- [[14-3 抗心绞痛药.pdf#page=19&selection=52,0,52,19|14-3 抗心绞痛药, 页面 19]]
 ---
 ###### 4. 临床应用
 - 硝酸甘油舌下含服缓解各种类型心绞痛
@@ -101,11 +103,11 @@ publish: true
 ---
 ### 2.  β blockers
 
-[](Pharmacology%20of%20BMS1_药理_zsy_net.pdf#page=22&selection=110,0,111,19|Pharmacology%20of%20BMS1_药理_zsy_net,%20页面%2022)
+[[BMS1_Pharmacology.pdf#page=22&selection=110,0,111,19|Pharmacology of BMS1_药理_zsy_net, 页面 22]]
 
 - 由于正常血管的收缩，使缺血的区域血供增加  
 - β 肾上腺素受体阻断药可减少心肌耗氧量、改善缺血区供血、缩小心肌梗死面积、减少心绞痛发作次数、增加患者运动耐量和延长心肌梗死患者生存期，是常用的防治心绞痛的药物
-- [](14-3%20抗心绞痛药.pdf#page=26&selection=52,0,53,8|14-3%20抗心绞痛药,%20页面%2026)
+- [[14-3 抗心绞痛药.pdf#page=26&selection=52,0,53,8|14-3 抗心绞痛药, 页面 26]]
 ---
 ###### 1. 作用机制
 
@@ -136,7 +138,7 @@ publish: true
 ---
 ### 3. Calcium channel blockers
 
-[](Pharmacology%20of%20BMS1_药理_zsy_net.pdf#page=22&selection=6,0,6,25|Pharmacology%20of%20BMS1_药理_zsy_net,%20页面%2022)
+[[BMS1_Pharmacology.pdf#page=22&selection=6,0,6,25|Pharmacology of BMS1_药理_zsy_net, 页面 22]]
 
 ###### 1. 作用机制
 
@@ -166,10 +168,10 @@ publish: true
 | Ejection time           | ↓              | ↑              | N                                  |
 - Not all vasodilators are effective in angina!
 - Not all agents useful in angina are vasodilators!
-![680](Pasted%20image%2020250325083944.png)
+![[抗心绞痛药总结表.png|680]]
 ---
 ###### the Coronary steal phenomenon
-[](14-3%20抗心绞痛药.pdf#page=39&selection=23,0,23,29|14-3%20抗心绞痛药,%20页面%2039)
+[[14-3 抗心绞痛药.pdf#page=39&selection=23,0,23,29|14-3 抗心绞痛药, 页面 39]]
 
 ---
 ### 其他抗心绞痛药物
@@ -207,4 +209,4 @@ publish: true
 ##### Unstable Angina & Acute Coronary Syndromes (ACS)
 - In patients with unstable angina with recurrent ischemic episodes at rest, recurrent *thrombotic occlusions* of the offending coronary artery occur as the result of fissuring of atherosclerotic plaques and platelet aggregation.
 - *Anticoagulant* and *antiplatelet* drugs play a major role in therapy. Aspirin, low-molecularweight heparin, Antiplatelet agents (ticlopidine, clopidogrel, and GPIIb/IIIa antagonists)
-- ![600](Pasted%20image%2020250325104402.png)
+- ![[抗心绞痛药与其他存在的疾病.png|600]]

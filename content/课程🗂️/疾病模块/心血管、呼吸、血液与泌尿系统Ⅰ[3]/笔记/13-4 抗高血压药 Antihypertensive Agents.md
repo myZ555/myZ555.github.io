@@ -1,10 +1,10 @@
 ---
 publish: true
+tags:
+  - 循环系统
+  - 药理
 ---
-#循环系统 #药理 
-
-
-[](Pharmacology%20of%20BMS1_药理_zsy_net.pdf#page=17&selection=195,0,197,1|Pharmacology%20of%20BMS1_药理_zsy_net,%20页面%2017)
+[[BMS1_Pharmacology.pdf#page=17&selection=195,0,197,1|Pharmacology of BMS1_药理_zsy_net, 页面 17]]
 #### 重点难点
 - 掌握：
 	1. 利尿药
@@ -33,7 +33,7 @@ publish: true
 	- reduce the morbidity and mortality rates
 	- best therapy and minimal risk
 - **Normal regulation of blood pressure**
-![450](Pasted%20image%2020250325105402.png)
+![[血压生理调节.png|450]]
 - *Anatomic sites of BP control:*
 	1. resistance arterioles 阻力血管
 	2. capacitance venules 容量血管
@@ -44,18 +44,18 @@ publish: true
 - 体位性低血压：postural baroreflex: responsible for rapid, moment to moment adjustment in BP
 - Renin-Angiotensin-Aldosterone (RAAS)
 > 交感神经系统和RAAS系统，与抗高血压药的作用及副作用密切相关
-[](14-4-抗高血压药.pdf#page=12&selection=2,0,4,20|14-4-抗高血压药,%20页面%2012)
+[[20250325抗高血压药.pdf#page=12&selection=2,0,4,20|14-4-抗高血压药, 页面 12]]
 
 # I. Basic pharmacology of antihypertensive agents
-![500](Pasted%20image%2020250327104718.png)
+![[抗高血压药的分类.png|500]]
 ### 1. Diuretics 
-[13-1 利尿药 Diuretic Agents](13-1%20利尿药%20Diuretic%20Agents.md)
+[[13-1 利尿药 Diuretic Agents]]
 drugs that alter sodium & water balance, depleting the sodium and reducing blood volume, and perhaps by other mechanisms
 1. 高效利尿药，速尿（*布美他尼*）-排钾利尿
 2. 中效利尿药，*氢氯噻嗪*-排钾利尿
 3. 醛固酮受体阻断剂（*螺内酯*）-保钾利尿
 4. Na+通道阻断剂（*阿米洛利*）-保钾利尿
-![500](Pasted%20image%2020250327104821.png)
+
 ###### 1. Pharmacological roles
 1. 利尿作用
 	- 早期-降低血容量及心输出量
@@ -77,7 +77,7 @@ drugs that alter sodium & water balance, depleting the sodium and reducing blood
 ---
 ### 2. Sympathoplegic agents
 Drugs that alter sympathetic nervous system function, reducing peripheral vascular resistance, inhibiting cardiac output, increasing venous pooling
-[](14-4-抗高血压药.pdf#page=21&selection=13,0,14,4|14-4-抗高血压药,%20页面%2021)
+[[20250325抗高血压药.pdf#page=21&selection=13,0,14,4|14-4-抗高血压药, 页面 21]]
 #### 1. centrally acting sympatholytic drugs-自学
 - ==Methyldopa==
 - ==Clonidine==
@@ -95,11 +95,11 @@ Drugs that alter sympathetic nervous system function, reducing peripheral vascul
 - ==Guanethidine==
 - ==Reserpine==
 
-![500](Pasted%20image%2020250327104845.png)
+
 
 ---
 #### 4. adrenoreceptor antagonists
-[](14-4-抗高血压药.pdf#page=32&selection=2,3,2,27|14-4-抗高血压药,%20页面%2032)
+[[20250325抗高血压药.pdf#page=32&selection=2,3,2,27|14-4-抗高血压药, 页面 32]]
 ##### β receptor blockers
 ---
 ###### ==Propranolol==
@@ -127,14 +127,8 @@ Drugs that alter sympathetic nervous system function, reducing peripheral vascul
 | Betaxolol & bisoprolol                 | β1 -selective blockers are primarily metabolized in the liver but have long half lives. Patients with reduced renal function or hepatic function should be careful. |
 | Pindolol<br> Acebutolol<br> Penbutolol | partial agonists, ie, β-blockers with intrinsic sympathomimetic activity.****                                                                                       |
 | Esmolol                                | β1 -selective blocker with very short half life time (~9 min). Rapidly metabolized via hydrolysis by red blood cell esterases.                                      |
-![500](Pasted%20image%2020250327104920.png)
 
----
 #####  α1 blockers
-
-![500](Pasted%20image%2020250327104956.png)
-
----
 ###### ==Prazosin 哌唑嗪== 
 1. mechanisms & sites of action
 	- Reduce arterial pressure by dilating both resistance and capacitance vessels.
@@ -168,7 +162,7 @@ Drugs that alter sympathetic nervous system function, reducing peripheral vascul
 - β受体被阻断减少糖原分解，增加胰岛素的敏感性，降低血糖； 在胰岛细胞，相对增加α受体的作用，使胰岛素分泌减少，增高血糖 掩盖糖尿病患者低血糖的症状
 ---
 ### 3. Vasodilators
-[](14-4-抗高血压药.pdf#page=49&selection=0,3,0,15|14-4-抗高血压药,%20页面%2049)
+[[20250325抗高血压药.pdf#page=49&selection=0,3,0,15|14-4-抗高血压药, 页面 49]]
 relaxing vascular smooth muscle, dilating resistance vessels and/or increasing
 #### Venous
 ##### ==Nitrates==
@@ -177,7 +171,6 @@ relaxing vascular smooth muscle, dilating resistance vessels and/or increasing
 #### Mixed
 ##### ==Calcium antagonists==
 - long-term + hypertensive emergencies
-- ![500](Pasted%20image%2020250327105041.png)
 
 ##### ==α-adrenergic blockers==
 ##### ==ACEIs==
@@ -217,16 +210,14 @@ relaxing vascular smooth muscle, dilating resistance vessels and/or increasing
 ### 4. Agents that block RAAS
 reduce peripheral vascular resistance and blood volume.
 > Aldosterone may “escape” during the administration of ARBs
-[](14-4-抗高血压药.pdf#page=62&selection=2,0,4,22|14-4-抗高血压药,%20页面%2062)
+[[20250325抗高血压药.pdf#page=62&selection=2,0,4,22|14-4-抗高血压药, 页面 62]]
 #### Pharmacological effects:
-![500](Pasted%20image%2020250327105118.png)
 - inhibition the production of AngII
 - Increase the accumulation of bradykinin
 - Protect the function of endothelia cells
 - Protect the cardiomyocyte
 - Increase the sensitivity to insulin
 - 降压，靶器官保护
-![500](Pasted%20image%2020250327105134.png)
 ---
 # II. Clinical pharmacology of antihypertensive agents
 
@@ -244,4 +235,4 @@ reduce peripheral vascular resistance and blood volume.
 - Loop diuretics
 ---
 ## *Treatment of hypertension in patients with concomitant diseases*
-![500](Pasted%20image%2020250327103147.png)
+![[抗高血压药与其他存在的疾病.png|500]]

@@ -49,6 +49,8 @@ jobs:
       - name: Install Quartz Plugins
         run: npx quartz plugin install
 
+      - name: Linker
+        run: python3 autolinker.py
       - name: Build Quartz
         run: npx quartz build
 

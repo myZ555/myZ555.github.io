@@ -5,10 +5,7 @@ tags:
   - 药理
 ---
 
-![350](Pasted%20image%2020250329095449.png)![320](Pasted%20image%2020250329095226.png)
-
-
-
+![[两种AT受体.png|350]]![[肾素-血管紧张素系统示意图.png|320]]
 - **Aldosterone 过度↑**
 	- *sodium retention*
 		- fluid retention
@@ -25,7 +22,7 @@ tags:
 - 单独或与其他降压药物合用治疗高血压。
 - 不良反应有腹泻、头痛、头晕、 乏力、咳嗽等。
 # 2. Angiotensin converting enzyme inhibitors (ACEI)
-![500](Pasted%20image%2020250329095956.png)
+
 ==Bradykinin 缓激肽== 
 - **Stimulation of endothelial NO formation—— Vasodilatation**
 - Stimulation of prostaglandin (PG) formation

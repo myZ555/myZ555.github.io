@@ -1,8 +1,9 @@
 ---
 publish: true
+tags:
+  - 呼吸系统
+  - 病理生理
 ---
-#呼吸系统 #病理生理
-
 ##### 学习目标：
 - （简单临床情境中）常见缺氧类型的主要发病机制和血氧变化特点
 - 解释缺氧时机体各器官系统的代偿机制及损伤性反应
@@ -11,7 +12,6 @@ publish: true
 	- Tissue cells can't obtain enough oxygen or can't fully utilize oxygen. 供氧不足/用氧障碍
 ---
 # 1 Parameters of blood oxygen
-[](Pathophysiology%20of%20BMS1_病生_zsy_net.pdf#page=14&selection=33,0,33,7|Pathophysiology%20of%20BMS1_病生_zsy_net,%20页面%2014)
 
 | 指标                                | 意义                          |
 | --------------------------------- | --------------------------- |
@@ -24,8 +24,8 @@ publish: true
 
 ---
 # 2 Classification and pathogenesis
-[](Pathophysiology%20of%20BMS1_病生_zsy_net.pdf#page=14&selection=282,0,284,13|Pathophysiology%20of%20BMS1_病生_zsy_net,%20页面%2014)
-![500](Pasted%20image%2020250324145536.png)
+
+![[疾病模块/心血管、呼吸、血液与泌尿系统Ⅰ[3]/attachments/缺氧的分类.png|500]]
 ### 1 Hypotonic hypoxia 低张性缺氧
 - 特征：
 	- 动脉血分压降低，PaO2<60mmHg, CO2↓, SO2↓, oxygen delivery↓
@@ -48,7 +48,7 @@ publish: true
 	- ==CO中毒【樱桃红色】==（治疗：立即从CO源移除+高压氧舱）
 	- ==高铁血红蛋白血症 MHb==   “肠源性发绀”，血液颜色较深（深咖啡色/巧克力色）
 - 皮肤颜色：苍白贫血貌
-CO：[](5%20Hypoxia-SJ-2025.pdf#page=24&selection=7,4,11,26|5%20Hypoxia-SJ-2025,%20页面%2024)
+CO：[[20250225Hypoxia-SJ-2025.pdf]]
 
 
 |      | CO2 max | CO2 | SO2    |
@@ -79,10 +79,10 @@ CO：[](5%20Hypoxia-SJ-2025.pdf#page=24&selection=7,4,11,26|5%20Hypoxia-SJ-2025,
 	- 线粒体损伤
 	- 呼吸酶缺乏
 ---
-![400](Pasted%20image%2020250324150215.png)
+![[不同类型缺氧的血气变化.png|400]]
 
 # 3 Functional and metabolic changes
-[](Pathophysiology%20of%20BMS1_病生_zsy_net.pdf#page=15&selection=586,0,588,5|Pathophysiology%20of%20BMS1_病生_zsy_net,%20页面%2015)
+[[BMS1_Pathology.pdf#page=15&selection=586,0,588,5|Pathophysiology of BMS1_病生_zsy_net, 页面 15]]
 - 轻度：代偿为主
 - 重度：失代偿--损伤
 - 急性：损伤为主
@@ -90,12 +90,12 @@ CO：[](5%20Hypoxia-SJ-2025.pdf#page=24&selection=7,4,11,26|5%20Hypoxia-SJ-2025,
 
 #### 1. 呼吸系统
 - 急性缺氧最重要的代偿反应
-1. 代偿：increased rate & depth of ventilation  Hypoxic ventilation reaction, HVR![350](Pasted%20image%2020250324150359.png)
+1. 代偿：increased rate & depth of ventilation  Hypoxic ventilation reaction, HVR![[Pasted image 20250324150359.png|350]]
 2. 失代偿：decreased rate & depth of ventilation
 	- PaO2 < 30mmHg→中枢能量代谢障碍→呼吸中枢抑制
 	- 呼吸肌疲劳、能量不足
 #### 2. 循环系统
-[](5%20Hypoxia-SJ-2025.pdf#page=42&selection=0,7,4,3|5%20Hypoxia-SJ-2025,%20页面%2042)
+[[20250225Hypoxia-SJ-2025.pdf#page=42&selection=0,7,4,3|5 Hypoxia-SJ-2025, 页面 42]]
 1. 代偿：
 	- CO↑--氧的运输↑
 		- 心率↑
@@ -103,14 +103,14 @@ CO：[](5%20Hypoxia-SJ-2025.pdf#page=24&selection=7,4,11,26|5%20Hypoxia-SJ-2025,
 		- 静脉回流↑（呼吸↑）
 	- Hypoxic Pulmonary Vasoconstriction (HPV) 缺氧性肺血管收缩
 		- 调整肺内不同区域通气/血流比→氧的摄取↑
-		- 肺水肿 lung edema（高原肺水肿，high-altitude pulmonary edema，HAPE）![300](Pasted%20image%2020250324150534.png)
+		- 肺水肿 lung edema（高原肺水肿，high-altitude pulmonary edema，HAPE）![[肺水肿发生机制.png|300]]
 	- Blood redistribution: 保持重要器官的氧供
 		1. 皮肤、腹腔脏器血流↓（交感兴奋，α受体密度高）
 		2. 心脑血流↑（局部代谢产物、扩血管）
 		3. 心脑血管平滑肌细胞膜的Kca和K ATP 开放，钾外向电流↑，超极化，钙离子内流
 	- capillary proliferation
 2. 失代偿
-	![400](Pasted%20image%2020250324150634.png)![400](Pasted%20image%2020250324150640.png)
+	![[肺血管重塑机制.png|400]]![[肺动脉高压机制.png|400]]
 #### 3. 血液系统
 1. 代偿
 	1. RBC↑（EPO↑）
@@ -118,7 +118,7 @@ CO：[](5%20Hypoxia-SJ-2025.pdf#page=24&selection=7,4,11,26|5%20Hypoxia-SJ-2025,
 2. 失代偿
 	1. PO2<60mmHg, Hb与O2结合受阻，SO2↓，失去代偿意义
 	2. RBC过度↑，血液粘滞度，促发心衰DIC
-	3. 脑耗氧高，对缺氧耐受性差，完全缺氧5-8min会造成不可逆损伤![400](Pasted%20image%2020250324150746.png)
+	3. 脑耗氧高，对缺氧耐受性差，完全缺氧5-8min会造成不可逆损伤![[缺氧对脑的影响.png|400]]
 
 # 4 Oxygen treatment and oxygen toxicity
-[](Pathophysiology%20of%20BMS1_病生_zsy_net.pdf#page=17&selection=91,0,91,8|Pathophysiology%20of%20BMS1_病生_zsy_net,%20页面%2017)
+[[BMS1_Pathology.pdf#page=17&selection=91,0,91,8|Pathophysiology of BMS1_病生_zsy_net, 页面 17]]

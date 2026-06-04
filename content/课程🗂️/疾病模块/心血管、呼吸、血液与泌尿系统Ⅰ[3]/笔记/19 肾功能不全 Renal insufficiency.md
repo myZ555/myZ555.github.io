@@ -45,7 +45,7 @@ tags:
 | Urinary Na+ ↓<br> Urine specific gravity ↑ | Urinary Na+ ↑<br>Urine specific gravity ↓                                               | 无尿                  |
 |                                            | 蛋白尿，血尿，脓尿<br>**金标准：尿沉积试验阳性**                                                            |                     |
 #### 发病机制：急性肾衰发病机制的中心环节是GFR的降低
-![Pasted image 20250411113146](Pasted%20image%2020250411113146.png)
+![[Pasted image 20250411113146.png]]
 ###### 1. 肾血管及血流动力学异常
 *ARF初期GFR下降和少尿的主要机制*
 1. **肾灌流量减少**
@@ -55,9 +55,9 @@ tags:
 3. **肾毛细血管内皮细胞肿胀**：Na+-K+-ATP酶↓，Ca2+超载
 4. **血管内凝血**：血液黏滞度↑，纤维蛋白和血小板沉积↑
 ###### 2. 肾小管损伤
-- **肾小管阻塞** Obstruction of renal tubules![Pasted image 20250411112757](Pasted%20image%2020250411112757.png)
-- **原尿反流** Reflux of urine![Pasted image 20250411112810](Pasted%20image%2020250411112810.png)
-- **管球反馈机制失衡** tubulo-glomerular feedback imbalance![Pasted image 20250411112835](Pasted%20image%2020250411112835.png)
+- **肾小管阻塞** Obstruction of renal tubules![[Pasted image 20250411112757.png]]
+- **原尿反流** Reflux of urine![[Pasted image 20250411112810.png]]
+- **管球反馈机制失衡** tubulo-glomerular feedback imbalance![[Pasted image 20250411112835.png]]
 ==肾小管阻塞和原尿反流的主要原因：肾小管上皮细胞损伤==
 1. ATP缺乏（主要因素）
 2. 细胞肿胀
@@ -126,7 +126,7 @@ tags:
 #### CRF功能代谢变化
 - 尿量：多尿——夜尿——少尿
 - 等渗尿/低渗尿（早期-浓缩障碍，稀释正常-低渗；晚期-浓缩/稀释均障碍-等渗）
-- 尿检：蛋白尿，血尿，脓尿并伴有不同类型的管型![Pasted image 20250411115426](Pasted%20image%2020250411115426.png)
+- 尿检：蛋白尿，血尿，脓尿并伴有不同类型的管型![[Pasted image 20250411115426.png]]
 1. 氮质血症
 2. 酸中毒：排酸保碱障碍，早期-可无症状；晚期-尤其尿毒症-呼吸加深加快甚至昏迷
 	- 早期：AG正常；晚期：AG↑
