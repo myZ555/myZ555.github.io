@@ -1,54 +1,51 @@
 import os
-import re
 
 CONTENT_DIR = "./content"
 
-# 匹配标题和高亮/加粗
-HEADING_REGEX = re.compile(r"^(#{1,6})\s+(.+)$")
-MARKER_REGEX = re.compile(r"==([^=]+)==|\*\*([^*]+)\*\*")
+def clean_concept_name(filename):
+    """
+    清洗文件名：去掉开头的数字编号（如 I-4-02、11）、后缀.md、空格和特殊符号
+    """
+    name = filename.replace(".md", "")
+    # 用简单的规则去掉开头的序号，比如 "I-4-02 胃食管反流病" -> "胃食管反流病"
+    name = os.path.basename(name)
+    # 去掉常见的前缀数字和字母
+    name = ''.join([c for c in name if not c.isdigit()]).strip()
+    name = name.lstrip('-._、 ')
+    return name
 
-def build_dict():
-    mesh_dict = {}
+def build_concept_market():
+    """
+    第一步：扫描医学库，把所有『文件名』登记成核心概念字典
+    """
+    concept_map = {}
     for root, dirs, files in os.walk(CONTENT_DIR):
-        # 避开日常随笔库，只从硬核医学库里提取核心词条
-        if "my-everyday" in root:
+        # 避开随笔库，只拿医学库的文件名
+        if "everyday" in root.lower().replace(" ", ""):
             continue
             
         for file in files:
             if not file.endswith(".md") or file == "index.md":
                 continue
                 
-            current_file_title = file.replace(".md", "")
-            current_heading = ""
-            file_path = os.path.join(root, file)
+            file_title_raw = file.replace(".md", "")
+            clean_concept = clean_concept_name(file)
             
-            try:
-                with open(file_path, "r", encoding="utf-8") as f:
-                    for line in f:
-                        heading_match = HEADING_REGEX.match(line.strip())
-                        if heading_match:
-                            if len(heading_match.group(1)) >= 2:
-                                current_heading = heading_match.group(2).strip()
-                            continue
-                        
-                        for match in MARKER_REGEX.findall(line):
-                            keyword = match[0] if match[0] else match[1]
-                            keyword = keyword.strip()
-                            # 过滤掉单字和脚注标记
-                            if len(keyword) > 1 and not keyword.startswith("[^"):
-                                if current_heading:
-                                    mesh_dict[keyword] = f"[[{current_file_title}#{current_heading}]]"
-                                else:
-                                    mesh_dict[keyword] = f"[[{current_file_title}]]"
-            except Exception:
-                pass
-    return mesh_dict
+            if len(clean_concept) >= 2: # 至少两个字才算一个医学概念
+                # 登记标准双链路径
+                concept_map[clean_concept] = f"[[{file_title_raw}]]"
+    return concept_map
 
-def inject_links(mesh_dict):
+def inject_intelligent_links(concept_map):
+    """
+    第二步：去随笔库里巡逻，只要发现随笔里包含了医学文件名（或其核心前缀），就挂上大盘联动卡片
+    """
     injection_count = 0
+    print("\n================== 🛰️ 概念雷达实时扫描 ==================")
+    
     for root, dirs, files in os.walk(CONTENT_DIR):
-        # 核心逻辑：巡逻队只去扫描日常随笔库，防止医学库自我套娃
-        if "my-everyday" not in root:
+        # 只去扫描随笔库
+        if "everyday" not in root.lower().replace(" ", ""):
             continue
             
         for file in files:
@@ -56,38 +53,37 @@ def inject_links(mesh_dict):
                 continue
                 
             file_path = os.path.join(root, file)
-            try:
-                with open(file_path, "r", encoding="utf-8") as f:
-                    content = f.read()
+            with open(file_path, "r", encoding="utf-8") as f:
+                everyday_text = f.read()
+            
+            matched_links = {}
+            for concept, link in concept_map.items():
+                # 💡 核心模糊逻辑：
+                # 1. 精确匹配：随笔里写了完整的 "胃食管反流病"
+                # 2. 相关性模糊匹配：如果文件名很长（如"胃食管反流病"），用户只写了前 4 个字（"胃食管反流"），也算命中！
+                fuzzy_short_concept = concept[:-1] if len(concept) >= 5 else concept
                 
-                found_keywords = {}
-                for keyword, link in mesh_dict.items():
-                    # 确保日常随笔里包含这个医学核心词，且该词不是随笔的文件名本身
-                    if keyword in content and keyword != file.replace(".md", ""):
-                        found_keywords[keyword] = link
+                if (concept in everyday_text or fuzzy_short_concept in everyday_text) and concept != file.replace(".md", ""):
+                    matched_links[concept] = link
+            
+            # 如果这篇随笔撞上了医学库的文件名概念
+            if matched_links:
+                print(f"  🎯 [概念撞车成功] -> 正在为 《{file}》 接入医学大盘...")
                 
-                # 如果在这篇日常随笔里抓到了医学交织点
-                if found_keywords:
-                    rel_path = os.path.relpath(file_path, CONTENT_DIR)
-                    print(f"  📌 [发现联动] -> 正在为随笔《{rel_path}》编织跨库网络...")
-                    
-                    # 💡 核心升级：改用高颜值的 Obsidian Callout 面板挂在最底下，确保 100% 被检索
-                    callout_content = "\n\n---\n\n> [!info] 🤖 赛博巡逻队知识联动\n> 检测到本文探讨的内容在您的核心医学大盘中有系统阐述，可协同参阅：\n"
-                    for kw, lnk in found_keywords.items():
-                        print(f"    ➔ 匹配词条: {kw}")
-                        callout_content += f"> - **{kw}** ➔ {lnk}\n"
-                    
-                    with open(file_path, "a", encoding="utf-8") as f:
-                        f.write(callout_content)
-                    injection_count += 1
-            except Exception as e:
-                print(f"  ❌ 扫描随笔失败 {file}: {str(e)}")
+                callout_content = "\n\n---\n\n> [!info] 🤖 赛博巡逻队概念联动\n> 检测到本文提及了您核心医学库中的章节概念，可直达大盘深挖主题：\n"
+                for concept, link in matched_links.items():
+                    print(f"    ➔ 关联医学章节: {concept}")
+                    callout_content += f"> - 📚 **{concept}** ➔ {link}\n"
                 
-    print(f"\n✨ 巡逻完毕！本次共为 {injection_count} 篇日常随笔注入了高颜值跨库看板。")
+                with open(file_path, "a", encoding="utf-8") as f:
+                    f.write(callout_content)
+                injection_count += 1
+                
+    print("===========================================================\n")
+    print(f"✨ 巡逻完毕！本次共为 {injection_count} 篇日常随笔精准缝合了医学大盘入口。")
 
 if __name__ == "__main__":
-    print("🤖 赛博巡逻队启动：正在构建医学全库哈希映射...")
-    dictionary = build_dict()
-    print(f"✅ 映射构建完成，共抓取 {len(dictionary)} 个原子级医学锚点。")
-    print("🔍 正在扫描随笔并静默注入高颜值跨库看板...")
-    inject_links(dictionary)
+    print("🤖 赛博巡逻队（概念版）启动：正在清点全库医学章节...")
+    market = build_concept_market()
+    print(f"✅ 清点完毕，已将 {len(market)} 个核心医学文件名录入雷达字典。")
+    inject_intelligent_links(market)
