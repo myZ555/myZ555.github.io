@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛰️ 签出当前人类最新的代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: 🧪 环境初始化 (Node & Python)
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 24
 
@@ -49,7 +49,7 @@ jobs:
 
       - name: 🚀 机器人自主提交进化 Pull Request
         if: steps.verify_diff.outputs.has_changes == 'true'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: bot/self-evolution-patch
