@@ -1,0 +1,18 @@
+site_name: Mingyu Notes
+site_url: https://myz555.github.io/
+
+theme:
+  name: material
+  language: zh
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
