@@ -1,0 +1,73 @@
+/* ========= 正文 ========= */
+
+body {
+    font-family:
+        "Songti SC",
+        "STSong",
+        "Noto Serif SC",
+        serif;
+
+    font-size: 18px;
+
+    line-height: 1.85;
+}
+
+
+/* ========= 标题 ========= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family:
+        "PingFang SC",
+        "Helvetica Neue",
+        sans-serif;
+
+    font-weight: 600;
+
+    line-height: 1.35;
+
+    margin-top: 1.6em;
+}
+
+/* ========= 段落 ========= */
+
+.md-typeset p {
+
+    margin-top: .9em;
+
+    margin-bottom: .9em;
+
+    text-align: justify;
+}
+
+/* ========= 列表 ========= */
+
+.md-typeset li {
+
+    margin-top: .45em;
+
+    margin-bottom: .45em;
+}
+
+/* ========= 表格 ========= */
+
+.md-typeset table {
+
+    font-size: 1.25rem;
+}
+
+/* ========= 代码 ========= */
+
+code,
+pre {
+
+    font-family:
+        "JetBrains Mono",
+        "SF Mono",
+        monospace;
+}
