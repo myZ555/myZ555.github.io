@@ -1,15 +1,17 @@
-# Python virtual environment
-.venv/
+ignore:
+    # Python virtual environment
+    .venv/
+    # Python cache
+    __pycache__/
+    *.py[cod]
+    # MkDocs build output
+    site/
+    # macOS
+    .DS_Store
+    # VS Code
+    .vscode/
 
-# Python cache
-__pycache__/
-*.py[cod]
-
-# MkDocs build output
-site/
-
-# macOS
-.DS_Store
-
-# VS Code
-.vscode/
+    # FSNotes
+    .trash/
+    Trash/
+    FSNotes/

@@ -1,0 +1,212 @@
+/* ========= 正文 ========= */
+
+body {
+    font-family:
+        "Songti SC",
+        "STSong",
+        "Noto Serif SC",
+        serif;
+
+    font-size: 18px;
+
+    line-height: 1.85;
+}
+
+
+/* ========= 标题 ========= */
+
+h1 {
+    font-size: 2.3rem;
+    margin-top: .5rem;
+    margin-bottom: 1.2rem;
+}
+h2 {
+    margin-top: 2.5rem;
+    padding-bottom: .3rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+h3 {
+    margin-top: 2rem;
+}
+/* ========= 段落 ========= */
+
+.md-typeset p {
+
+    margin-top: .9em;
+
+    margin-bottom: .9em;
+
+    text-align: justify;
+}
+
+/* ========= 列表 ========= */
+
+.md-typeset li {
+
+    margin-top: .45em;
+
+    margin-bottom: .45em;
+}
+
+/* ========= 表格 ========= */
+
+.md-typeset table:not([class]) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    border-top: 2px solid #374151;
+    border-bottom: 2px solid #374151;
+}
+.md-typeset table thead {
+    border-bottom: 1px solid #9ca3af;
+}
+
+.md-typeset table th {
+    font-weight: 700;
+    font-size: .95rem;
+}
+.md-typeset table td,
+.md-typeset table th {
+    padding: .8rem 1rem;
+    border: 0;
+}
+.md-typeset table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+.md-typeset table th:first-child,
+.md-typeset table td:first-child {
+    font-weight: 700;
+}
+
+/* ========= 首页 ========= */
+
+.home-hero {
+    margin: 1rem 0 1.5rem;
+    padding: clamp(1.8rem, 5vw, 4rem) clamp(1.25rem, 5vw, 4rem);
+    border-top: 3px solid var(--md-primary-fg-color);
+    border-bottom: 1px solid var(--md-primary-fg-color--light);
+    background:
+        linear-gradient(135deg, rgba(0, 121, 107, .12), rgba(0, 121, 107, 0) 65%),
+        var(--md-default-bg-color);
+}
+
+.home-hero__eyebrow {
+    margin: 0 0 .9rem !important;
+    color: var(--md-primary-fg-color);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.home-hero h1 {
+    max-width: 18em;
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.25;
+}
+
+.home-hero > p:not(.home-hero__eyebrow) {
+    max-width: 48rem;
+    margin: 0;
+    color: var(--md-default-fg-color--light);
+}
+
+.home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 1.5rem;
+}
+
+.home-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin: 0 0 2.5rem;
+    background: var(--md-default-fg-color--lightest);
+}
+
+.home-metrics > div {
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
+    padding: 1rem;
+    text-align: center;
+    background: var(--md-default-bg-color);
+}
+
+.home-metrics strong {
+    color: var(--md-primary-fg-color);
+    font-size: 1.45rem;
+    line-height: 1.2;
+}
+
+.home-metrics span {
+    color: var(--md-default-fg-color--light);
+    font-size: .82rem;
+}
+
+.home-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+.home-card {
+    padding: 1.15rem 1.25rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-top: 2px solid var(--md-primary-fg-color);
+    background: var(--md-default-bg-color);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, .08);
+}
+
+.home-card h4 {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.home-card p {
+    min-height: 3.4em;
+    font-size: .92rem;
+}
+
+.home-card p:last-child {
+    margin-bottom: 0;
+    font-size: .88rem;
+}
+
+.home-footer-note {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-left: 3px solid var(--md-primary-fg-color);
+    background: var(--md-code-bg-color);
+    font-size: .92rem;
+}
+
+@media screen and (max-width: 768px) {
+    .home-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-metrics {
+        grid-template-columns: 1fr;
+    }
+}
+/* ========= 代码 ========= */
+
+code,
+pre {
+
+    font-family:
+        "JetBrains Mono",
+        "SF Mono",
+        monospace;
+}

@@ -1,54 +1,57 @@
-/* ========= 正文 ========= */
+/* ========= Reading system ========= */
 
-body {
-    font-family:
+:root {
+    --notes-serif:
         "Songti SC",
         "STSong",
         "Noto Serif SC",
+        "Source Han Serif SC",
         serif;
+    --notes-sans:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "PingFang SC",
+        "Hiragino Sans GB",
+        sans-serif;
+}
 
+body {
+    font-family: var(--notes-serif);
     font-size: 18px;
-
     line-height: 1.85;
 }
 
+.md-typeset p {
+    margin-top: .9em;
+    margin-bottom: .9em;
+    text-align: justify;
+}
 
-/* ========= 标题 ========= */
+.md-typeset li {
+    margin-top: .45em;
+    margin-bottom: .45em;
+}
+
+/* ========= Headings ========= */
 
 h1 {
     font-size: 2.3rem;
     margin-top: .5rem;
     margin-bottom: 1.2rem;
 }
+
 h2 {
     margin-top: 2.5rem;
     padding-bottom: .3rem;
     border-bottom: 2px solid #e5e7eb;
 }
+
 h3 {
     margin-top: 2rem;
 }
-/* ========= 段落 ========= */
 
-.md-typeset p {
-
-    margin-top: .9em;
-
-    margin-bottom: .9em;
-
-    text-align: justify;
-}
-
-/* ========= 列表 ========= */
-
-.md-typeset li {
-
-    margin-top: .45em;
-
-    margin-bottom: .45em;
-}
-
-/* ========= 表格 ========= */
+/* ========= Tables ========= */
 
 .md-typeset table:not([class]) {
     width: 100%;
@@ -57,6 +60,7 @@ h3 {
     border-top: 2px solid #374151;
     border-bottom: 2px solid #374151;
 }
+
 .md-typeset table thead {
     border-bottom: 1px solid #9ca3af;
 }
@@ -65,148 +69,281 @@ h3 {
     font-weight: 700;
     font-size: .95rem;
 }
+
 .md-typeset table td,
 .md-typeset table th {
     padding: .8rem 1rem;
     border: 0;
 }
+
 .md-typeset table tbody tr:nth-child(even) {
     background: #fafafa;
 }
+
 .md-typeset table th:first-child,
 .md-typeset table td:first-child {
     font-weight: 700;
 }
 
-/* ========= 首页 ========= */
+/* ========= Homepage ========= */
 
-.home-hero {
-    margin: 1rem 0 1.5rem;
-    padding: clamp(1.8rem, 5vw, 4rem) clamp(1.25rem, 5vw, 4rem);
-    border-top: 3px solid var(--md-primary-fg-color);
-    border-bottom: 1px solid var(--md-primary-fg-color--light);
-    background:
-        linear-gradient(135deg, rgba(0, 121, 107, .12), rgba(0, 121, 107, 0) 65%),
-        var(--md-default-bg-color);
+.home-page {
+    --home-ink: #172b27;
+    --home-muted: #68736e;
+    --home-line: rgba(23, 43, 39, .16);
+    --home-accent: #2f6a5c;
+    --home-accent-dark: #214d43;
+    color: var(--home-ink);
 }
 
-.home-hero__eyebrow {
-    margin: 0 0 .9rem !important;
-    color: var(--md-primary-fg-color);
-    font-size: .78rem;
-    font-weight: 700;
-    letter-spacing: .12em;
+.md-content:has(.home-page) {
+    max-width: none;
+}
+
+.md-main__inner:has(.home-page) {
+    margin-top: 0;
+}
+
+/* Hide the secondary sidebar when a page has no document outline. */
+
+@media screen and (min-width: 60em) {
+    .md-sidebar--secondary:not(:has(.md-nav--secondary > .md-nav__list)) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 76.25em) {
+    [dir="ltr"] .md-sidebar--secondary:not(:has(.md-nav--secondary > .md-nav__list)) ~ .md-content > .md-content__inner {
+        margin-right: 0;
+    }
+
+    [dir="rtl"] .md-sidebar--secondary:not(:has(.md-nav--secondary > .md-nav__list)) ~ .md-content > .md-content__inner {
+        margin-left: 0;
+    }
+}
+
+.home-page .md-button,
+.home-page .home-label,
+.home-page .home-index__number,
+.home-page .home-index__detail,
+.home-page .home-note {
+    font-family: var(--notes-sans);
+}
+
+.home-hero {
+    box-sizing: border-box;
+    display: flex;
+    min-height: min(46rem, calc(100svh - 4.75rem));
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: clamp(5rem, 15vh, 10rem) clamp(1.25rem, 7vw, 7rem) clamp(6rem, 14vh, 10rem);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .home-hero h1 {
-    max-width: 18em;
-    margin: 0 0 1rem;
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    line-height: 1.25;
+    max-width: 12em;
+    margin: 0;
+    color: var(--home-ink);
+    font-family: var(--notes-serif);
+    font-size: clamp(3.25rem, 8vw, 7rem);
+    font-weight: 400;
+    letter-spacing: -.075em;
+    line-height: 1.08;
 }
 
-.home-hero > p:not(.home-hero__eyebrow) {
-    max-width: 48rem;
-    margin: 0;
-    color: var(--md-default-fg-color--light);
+.home-hero > p {
+    max-width: 28em;
+    margin: 1.7rem 0 0;
+    color: var(--home-muted);
+    font-size: clamp(1.05rem, 1.8vw, 1.45rem);
+    letter-spacing: .025em;
+    line-height: 1.65;
 }
 
 .home-actions {
     display: flex;
     flex-wrap: wrap;
     gap: .75rem;
-    margin-top: 1.5rem;
+    margin-top: 2.4rem;
 }
 
-.home-metrics {
+.home-page .md-button {
+    min-height: 2.7rem;
+    padding: .62rem 1.25rem;
+    border: 1px solid var(--home-line);
+    border-radius: 999px;
+    color: var(--home-ink);
+    font-size: .88rem;
+    letter-spacing: .02em;
+    line-height: 1.4;
+    transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+
+.home-page .md-button:hover {
+    border-color: var(--home-accent);
+    background: transparent;
+    color: var(--home-accent-dark);
+}
+
+.home-page .md-button--primary,
+.home-page .md-button--primary:hover {
+    border-color: var(--home-accent);
+    background: var(--home-accent);
+    color: #fff;
+}
+
+.home-library {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    margin: 0 0 2.5rem;
-    background: var(--md-default-fg-color--lightest);
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 7vw, 7rem) clamp(5rem, 9vw, 8rem);
+    grid-template-columns: minmax(13rem, .7fr) minmax(0, 1.3fr);
+    gap: clamp(3rem, 8vw, 9rem);
+    border-top: 1px solid var(--home-line);
 }
 
-.home-metrics > div {
-    display: flex;
-    flex-direction: column;
-    gap: .15rem;
-    padding: 1rem;
-    text-align: center;
-    background: var(--md-default-bg-color);
+.home-label {
+    margin: 0 0 1.2rem;
+    color: var(--home-accent);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .18em;
 }
 
-.home-metrics strong {
-    color: var(--md-primary-fg-color);
-    font-size: 1.45rem;
+.home-library h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: var(--home-ink);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    letter-spacing: -.05em;
     line-height: 1.2;
 }
 
-.home-metrics span {
-    color: var(--md-default-fg-color--light);
-    font-size: .82rem;
+.home-library__intro > p:last-child {
+    max-width: 16rem;
+    margin-top: 1.2rem;
+    color: var(--home-muted);
+    font-size: .98rem;
+    line-height: 1.8;
 }
 
-.home-card-grid {
+.home-index {
+    border-top: 1px solid var(--home-line);
+}
+
+.home-index__row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    min-height: 5.2rem;
+    align-items: center;
+    grid-template-columns: 3rem minmax(9rem, 1fr) minmax(10rem, 1.5fr) 1.5rem;
     gap: 1rem;
-    margin: 1rem 0 2rem;
+    border-bottom: 1px solid var(--home-line);
+    color: var(--home-ink);
+    text-decoration: none;
+    transition: color .2s ease, padding .2s ease;
 }
 
-.home-card {
-    padding: 1.15rem 1.25rem;
-    border: 1px solid var(--md-default-fg-color--lightest);
-    border-top: 2px solid var(--md-primary-fg-color);
-    background: var(--md-default-bg-color);
-    transition: transform .15s ease, box-shadow .15s ease;
+.home-index__row:hover {
+    padding: 0 .5rem;
+    color: var(--home-accent);
 }
 
-.home-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, .08);
+.home-index__number {
+    color: var(--home-accent);
+    font-size: .72rem;
+    letter-spacing: .08em;
 }
 
-.home-card h4 {
-    margin-top: 0;
-    font-size: 1rem;
+.home-index__title {
+    font-size: 1.08rem;
 }
 
-.home-card p {
-    min-height: 3.4em;
-    font-size: .92rem;
+.home-index__detail {
+    color: var(--home-muted);
+    font-size: .78rem;
+    letter-spacing: .015em;
+    line-height: 1.5;
 }
 
-.home-card p:last-child {
-    margin-bottom: 0;
-    font-size: .88rem;
+.home-index__arrow {
+    justify-self: end;
+    color: var(--home-accent);
+    font-family: var(--notes-sans);
+    font-size: 1.15rem;
 }
 
-.home-footer-note {
-    margin-top: 1.5rem;
-    padding: 1rem 1.25rem;
-    border-left: 3px solid var(--md-primary-fg-color);
-    background: var(--md-code-bg-color);
-    font-size: .92rem;
+.home-note {
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: 0 clamp(1.25rem, 7vw, 7rem) 4rem;
+    color: var(--home-muted);
+    font-size: .76rem;
+    line-height: 1.7;
 }
 
-@media screen and (max-width: 768px) {
-    .home-card-grid {
-        grid-template-columns: 1fr;
+@media screen and (max-width: 700px) {
+    .home-hero {
+        min-height: min(42rem, calc(100svh - 3.5rem));
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .home-library {
+        display: block;
+    }
+
+    .home-library__intro {
+        margin-bottom: 3rem;
+    }
+
+    .home-index__row {
+        grid-template-columns: 2rem minmax(0, 1fr) 1.5rem;
+        gap: .75rem;
+        padding: .85rem 0;
+    }
+
+    .home-index__detail {
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
+
+    .home-index__arrow {
+        grid-column: 3;
+        grid-row: 1 / 3;
+    }
+
+    .home-index__row:hover {
+        padding-left: .25rem;
+        padding-right: .25rem;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .home-metrics {
-        grid-template-columns: 1fr;
+@media (prefers-reduced-motion: reduce) {
+    .home-page .md-button,
+    .home-index__row {
+        transition: none;
     }
 }
-/* ========= 代码 ========= */
+
+[data-md-color-scheme="slate"] .home-page {
+    --home-ink: #f0f3ee;
+    --home-muted: #aab5ae;
+    --home-line: rgba(240, 243, 238, .18);
+    --home-accent: #8bc5ad;
+    --home-accent-dark: #b4dec9;
+}
+
+/* ========= Code ========= */
 
 code,
 pre {
-
-    font-family:
-        "JetBrains Mono",
-        "SF Mono",
-        monospace;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
 }
