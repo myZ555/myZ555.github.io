@@ -15,25 +15,19 @@ body {
 
 /* ========= 标题 ========= */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
-    font-family:
-        "PingFang SC",
-        "Helvetica Neue",
-        sans-serif;
-
-    font-weight: 600;
-
-    line-height: 1.35;
-
-    margin-top: 1.6em;
+h1 {
+    font-size: 2.3rem;
+    margin-top: .5rem;
+    margin-bottom: 1.2rem;
 }
-
+h2 {
+    margin-top: 2.5rem;
+    padding-bottom: .3rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+h3 {
+    margin-top: 2rem;
+}
 /* ========= 段落 ========= */
 
 .md-typeset p {
@@ -56,11 +50,28 @@ h6 {
 
 /* ========= 表格 ========= */
 
-.md-typeset table {
-
-    font-size: 1.25rem;
+.md-typeset table:not([class]) {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+.md-typeset table thead {
+    background: #f4f6f8;
 }
 
+.md-typeset table th {
+    font-weight: 700;
+    font-size: .95rem;
+}
+.md-typeset table td,
+.md-typeset table th {
+    padding: .8rem 1rem;
+}
+.md-typeset table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
 /* ========= 代码 ========= */
 
 code,
