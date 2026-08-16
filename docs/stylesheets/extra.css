@@ -142,15 +142,29 @@ h3 {
     align-items: flex-start;
 }
 
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .home-hero h1 {
     max-width: 12em;
     margin: 0;
+    padding-left: clamp(1rem, 3vw, 1.5rem);
+    border-left: 1px solid var(--home-accent);
     color: var(--home-ink);
     font-family: var(--notes-serif);
     font-size: clamp(3.25rem, 8vw, 7rem);
     font-weight: 400;
-    letter-spacing: -.075em;
-    line-height: 1.08;
+    letter-spacing: 0.12em;
+    line-height: 1.15;
+    animation: titleFadeIn 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
 .home-hero > p {

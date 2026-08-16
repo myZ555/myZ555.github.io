@@ -4,7 +4,7 @@
 <h1 id="home-title">见习笔记</h1>
 </section>
 
-<section class="home-library" id="category1" aria-labelledby="cat1-title">
+<section class="home-library" id="category1" aria-labelledby="cat1-title" data-aos="fade-up">
 <div class="home-library__intro">
 <p class="home-label">CATEGORY 01</p>
 <h2 id="cat1-title">内科轮</h2>
@@ -24,7 +24,7 @@
 </nav>
 </section>
 
-<section class="home-library" id="category2" aria-labelledby="cat2-title">
+<section class="home-library" id="category2" aria-labelledby="cat2-title" data-aos="fade-up">
 <div class="home-library__intro">
 <p class="home-label">CATEGORY 02</p>
 <h2 id="cat2-title">外科轮</h2>
@@ -44,7 +44,7 @@
 </nav>
 </section>
 
-<section class="home-library" id="category3" aria-labelledby="cat3-title">
+<section class="home-library" id="category3" aria-labelledby="cat3-title" data-aos="fade-up">
 <div class="home-library__intro">
 <p class="home-label">CATEGORY 03</p>
 <h2 id="cat3-title">小科轮</h2>
