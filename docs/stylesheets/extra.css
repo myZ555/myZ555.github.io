@@ -88,11 +88,11 @@ h3 {
 /* ========= Homepage ========= */
 
 .home-page {
-    --home-ink: #172b27;
-    --home-muted: #68736e;
-    --home-line: rgba(23, 43, 39, .16);
-    --home-accent: #2f6a5c;
-    --home-accent-dark: #214d43;
+    --home-ink: #231633;
+    --home-muted: #6a607a;
+    --home-line: rgba(88, 53, 140, .16);
+    --home-accent: #6b4eff;
+    --home-accent-dark: #4f31cc;
     color: var(--home-ink);
 }
 
@@ -334,11 +334,11 @@ h3 {
 }
 
 [data-md-color-scheme="slate"] .home-page {
-    --home-ink: #f0f3ee;
-    --home-muted: #aab5ae;
-    --home-line: rgba(240, 243, 238, .18);
-    --home-accent: #8bc5ad;
-    --home-accent-dark: #b4dec9;
+    --home-ink: #f2ecff;
+    --home-muted: #c8bee0;
+    --home-line: rgba(211, 187, 255, .18);
+    --home-accent: #b59cff;
+    --home-accent-dark: #d6c4ff;
 }
 
 /* ========= Code ========= */

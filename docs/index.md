@@ -2,28 +2,68 @@
 
 <section class="home-hero" aria-labelledby="home-title">
 <h1 id="home-title">见习笔记</h1>
-<p>快速查询与便捷访问</p>
-<div class="home-actions">
-<a class="md-button md-button--primary" href="Ophthalmology/第%202%20章%20解剖生理/">8.3-8.7: 眼科学</a>
-<a class="md-button" href="#library">浏览知识库</a>
-</div>
 </section>
 
-<section class="home-library" id="library" aria-labelledby="library-title">
+<section class="home-library" id="category1" aria-labelledby="cat1-title">
 <div class="home-library__intro">
-<p class="home-label">R01W01</p>
-<h2 id="library-title">眼科学</h2>
+<p class="home-label">CATEGORY 01</p>
+<h2 id="cat1-title">内科轮</h2>
 </div>
-
-<nav class="home-index" aria-label="眼科学目录">
-<a class="home-index__row" href="Ophthalmology/第%202%20章%20解剖生理/">
+<nav class="home-index">
+<!-- TODO: Add internal medicine links here -->
+<a class="home-index__row" href="#">
 <span class="home-index__number">01</span>
-<span class="home-index__title">口袋书</span>
+<span class="home-index__title">1内科占位符 </span>
 <span class="home-index__arrow" aria-hidden="true">↗</span>
 </a>
-<a class="home-index__row" href="Ophthalmology/Clerkship%EF%BC%9A眼科重点疾病章节与内容摘录/">
+<a class="home-index__row" href="#">
 <span class="home-index__number">02</span>
-<span class="home-index__title">总结表</span>
+<span class="home-index__title">内科占位符 2</span>
+<span class="home-index__arrow" aria-hidden="true">↗</span>
+</a>
+</nav>
+</section>
+
+<section class="home-library" id="category2" aria-labelledby="cat2-title">
+<div class="home-library__intro">
+<p class="home-label">CATEGORY 02</p>
+<h2 id="cat2-title">外科轮</h2>
+</div>
+<nav class="home-index">
+<!-- TODO: Add surgery links here -->
+<a class="home-index__row" href="#">
+<span class="home-index__number">01</span>
+<span class="home-index__title">外科占位符 1</span>
+<span class="home-index__arrow" aria-hidden="true">↗</span>
+</a>
+<a class="home-index__row" href="#">
+<span class="home-index__number">02</span>
+<span class="home-index__title">外科占位符 2</span>
+<span class="home-index__arrow" aria-hidden="true">↗</span>
+</a>
+</nav>
+</section>
+
+<section class="home-library" id="category3" aria-labelledby="cat3-title">
+<div class="home-library__intro">
+<p class="home-label">CATEGORY 03</p>
+<h2 id="cat3-title">小科轮</h2>
+</div>
+<nav class="home-index">
+<!-- TODO: Add minor specialties links here -->
+<a class="home-index__row" href="#">
+<span class="home-index__number">01</span>
+<span class="home-index__title">眼科</span>
+<span class="home-index__arrow" aria-hidden="true">↗</span>
+</a>
+<a class="home-index__row" href="#">
+<span class="home-index__number">02</span>
+<span class="home-index__title">耳鼻咽喉科</span>
+<span class="home-index__arrow" aria-hidden="true">↗</span>
+</a>
+<a class="home-index__row" href="#">
+<span class="home-index__number">03</span>
+<span class="home-index__title">精神科</span>
 <span class="home-index__arrow" aria-hidden="true">↗</span>
 </a>
 </nav>
