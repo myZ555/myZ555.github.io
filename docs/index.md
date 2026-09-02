@@ -10,15 +10,19 @@
 <h2 id="cat1-title">内科轮</h2>
 </div>
 <nav class="home-index">
-<!-- TODO: Add internal medicine links here -->
-<a class="home-index__row" href="#">
+<a class="home-index__row" href="Pediatrics/Notes/Clerkship00/">
 <span class="home-index__number">01</span>
-<span class="home-index__title">1内科占位符 </span>
+<span class="home-index__title">儿科学</span>
 <span class="home-index__arrow" aria-hidden="true">↗</span>
 </a>
-<a class="home-index__row" href="#">
+<a class="home-index__row" href="Infectious Diseases/PocketBook/Ch01/">
 <span class="home-index__number">02</span>
-<span class="home-index__title">内科占位符 2</span>
+<span class="home-index__title">感染病学</span>
+<span class="home-index__arrow" aria-hidden="true">↗</span>
+</a>
+<a class="home-index__row" href="Dermatology/PocketBook/Ch01/">
+<span class="home-index__number">03</span>
+<span class="home-index__title">皮肤性病学</span>
 <span class="home-index__arrow" aria-hidden="true">↗</span>
 </a>
 </nav>
@@ -30,15 +34,9 @@
 <h2 id="cat2-title">外科轮</h2>
 </div>
 <nav class="home-index">
-<!-- TODO: Add surgery links here -->
-<a class="home-index__row" href="#">
+<a class="home-index__row" href="OB:GYN/PocketBook/Sec01/">
 <span class="home-index__number">01</span>
-<span class="home-index__title">外科占位符 1</span>
-<span class="home-index__arrow" aria-hidden="true">↗</span>
-</a>
-<a class="home-index__row" href="#">
-<span class="home-index__number">02</span>
-<span class="home-index__title">外科占位符 2</span>
+<span class="home-index__title">妇产科学</span>
 <span class="home-index__arrow" aria-hidden="true">↗</span>
 </a>
 </nav>
@@ -50,18 +48,17 @@
 <h2 id="cat3-title">小科轮</h2>
 </div>
 <nav class="home-index">
-<!-- TODO: Add minor specialties links here -->
-<a class="home-index__row" href="#">
+<a class="home-index__row" href="Ophthalmology/Summary/Clerkship001/">
 <span class="home-index__number">01</span>
 <span class="home-index__title">眼科</span>
 <span class="home-index__arrow" aria-hidden="true">↗</span>
 </a>
-<a class="home-index__row" href="#">
+<a class="home-index__row" href="Otorhinolaryngology/Summary/Clerkship001/">
 <span class="home-index__number">02</span>
 <span class="home-index__title">耳鼻咽喉科</span>
 <span class="home-index__arrow" aria-hidden="true">↗</span>
 </a>
-<a class="home-index__row" href="#">
+<a class="home-index__row" href="Psychiary/Clerkship001/">
 <span class="home-index__number">03</span>
 <span class="home-index__title">精神科</span>
 <span class="home-index__arrow" aria-hidden="true">↗</span>

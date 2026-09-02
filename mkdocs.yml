@@ -1,5 +1,8 @@
 site_name: Mingyu Medical Notes
 site_url: https://myZ555.github.io/
+repo_url: https://github.com/myZ555/myZ555.github.io
+repo_name: myZ555/myZ555.github.io
+strict: true
 
 theme:
   name: material
