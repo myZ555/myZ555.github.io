@@ -225,11 +225,10 @@
 [^pdf-p305]: 《儿科学》（人民卫生出版社）第 305 页。
 [^pdf-p306]: 《儿科学》（人民卫生出版社）第 306 页。
 [^pdf-p307]: 《儿科学》（人民卫生出版社）第 307 页【先天性肾病综合征】
-[^pdf-p308-309]: 《儿科学》（人民卫生出版社）第 308-309 页。
-[^pb-ch08-agn]: Ch08 泌尿系统：急性肾小球肾炎（病因机制、典型表现、重症并发症、实验室指标动态、休息与治疗）。详见本地文件 [PocketBook/Ch08.md](file:///Users/mingyu/Developer/Notes-site/docs/Pediatrics/PocketBook/Ch08.md)。
-[^pb-ch08-ns]: Ch08 泌尿系统：肾病综合征（四大特征、病理生理、微小病变等病理对比表、常见并发症、激素敏感/耐药/依赖分型、中长程疗程、免疫抑制剂与预后）。详见本地文件 [PocketBook/Ch08.md](file:///Users/mingyu/Developer/Notes-site/docs/Pediatrics/PocketBook/Ch08.md)。
-[^pb-ch13]: Ch13 泌尿系统疾病：原发/继发/遗传性肾小球疾病分类、APSGN、IgA 肾病鉴别。详见本地文件 [PocketBook/Ch13.md](file:///Users/mingyu/Developer/Notes-site/docs/Pediatrics/PocketBook/Ch13.md)。
-[^case00-case01]: 临床思维病例讨论资料：案例三（急性链球菌感染后肾小球肾炎伴高血压脑病早期临床识别与处置）。详见本地文件 [Case00.md](file:///Users/mingyu/Developer/Notes-site/docs/Pediatrics/Case00.md) 与 [Case01.md](file:///Users/mingyu/Developer/Notes-site/docs/Pediatrics/Case01.md)。
+[^pb-ch08-agn]: Ch08 泌尿系统：急性肾小球肾炎。详见 [PocketBook/Ch08.md](../PocketBook/Ch08.md)。
+[^pb-ch08-ns]: Ch08 泌尿系统：肾病综合征。详见 [PocketBook/Ch08.md](../PocketBook/Ch08.md)。
+[^pb-ch13]: Ch13 泌尿系统疾病：原发/继发/遗传性肾小球疾病分类。详见 [PocketBook/Ch13.md](../PocketBook/Ch13.md)。
+[^case00-case01]: 临床思维病例讨论资料：案例三。相关 Case00、Case01 文件尚未纳入本站点。
 [^kdigo-glom]: KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases (*Kidney International*, 2021). 访问：[KDIGO Glomerular Diseases Guideline](https://kdigo.org/guidelines/glomerular-diseases/)
 [^csp-pns-guide]: 中华医学会儿科学分会肾脏学组. 儿童常见肾脏疾病诊治循证指南(一)：激素敏感、复发/依赖肾病综合征诊治指南. 《中华儿科杂志》. 检索：[万方医学 / 中华医学会杂志社](http://rs.yiigle.com/)
 [^uptodate-apsgn]: UpToDate: *Poststreptococcal glomerulonephritis in children* (儿童链球菌感染后肾小球肾炎). 详述 APSGN 发病机制、补体 C3 演变轨迹、重症循环充血救治与自限性预后。在线访问：[UpToDate - APSGN](https://www.uptodate.com/contents/poststreptococcal-glomerulonephritis-in-children)
