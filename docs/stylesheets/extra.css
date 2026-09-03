@@ -17,15 +17,15 @@
 }
 
 body {
-    font-family: var(--notes-serif);
-    font-size: 18px;
-    line-height: 1.85;
+    font-family: var(--notes-sans);
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 .md-typeset p {
-    margin-top: .9em;
-    margin-bottom: .9em;
-    text-align: justify;
+    margin-top: .8em;
+    margin-bottom: .8em;
+    text-align: left;
 }
 
 .md-typeset li {
@@ -36,15 +36,15 @@ body {
 /* ========= Headings ========= */
 
 h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-top: .5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
-    margin-top: 2.5rem;
-    padding-bottom: .3rem;
-    border-bottom: 2px solid #e5e7eb;
+    margin-top: 2.2rem;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 h3 {
@@ -54,11 +54,23 @@ h3 {
 /* ========= Tables ========= */
 
 .md-typeset table:not([class]) {
+    display: table;
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
     border-top: 2px solid #374151;
     border-bottom: 2px solid #374151;
+    font-size: .95rem;
+}
+
+.md-typeset__scrollwrap {
+    margin: 1em 0;
+}
+
+.md-typeset__table {
+    display: block;
+    width: 100%;
+    padding: 0;
 }
 
 .md-typeset table thead {
@@ -67,7 +79,7 @@ h3 {
 
 .md-typeset table th {
     font-weight: 700;
-    font-size: .95rem;
+    font-size: 1em;
 }
 
 .md-typeset table td,
@@ -134,9 +146,9 @@ h3 {
     box-sizing: border-box;
     display: flex;
     min-height: min(46rem, calc(100svh - 4.75rem));
-    max-width: 78rem;
+    max-width: 72rem;
     margin: 0 auto;
-    padding: clamp(5rem, 15vh, 10rem) clamp(1.25rem, 7vw, 7rem) clamp(6rem, 14vh, 10rem);
+    padding: clamp(4rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem) clamp(5rem, 10vh, 7rem);
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -154,15 +166,15 @@ h3 {
 }
 
 .home-hero h1 {
-    max-width: 12em;
+    max-width: 16em;
     margin: 0;
-    padding-left: clamp(1rem, 3vw, 1.5rem);
-    border-left: 1px solid var(--home-accent);
+    padding-left: 0;
+    border-left: 0;
     color: var(--home-ink);
     font-family: var(--notes-serif);
-    font-size: clamp(3.25rem, 8vw, 7rem);
+    font-size: clamp(2.75rem, 6vw, 5.5rem);
     font-weight: 400;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.04em;
     line-height: 1.15;
     animation: titleFadeIn 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
@@ -210,9 +222,9 @@ h3 {
 
 .home-library {
     display: grid;
-    max-width: 78rem;
+    max-width: 72rem;
     margin: 0 auto;
-    padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 7vw, 7rem) clamp(5rem, 9vw, 8rem);
+    padding: clamp(4rem, 8vw, 6rem) clamp(1.25rem, 5vw, 4rem) clamp(4rem, 8vw, 6rem);
     grid-template-columns: minmax(13rem, .7fr) minmax(0, 1.3fr);
     gap: clamp(3rem, 8vw, 9rem);
     border-top: 1px solid var(--home-line);
@@ -291,9 +303,9 @@ h3 {
 }
 
 .home-note {
-    max-width: 78rem;
+    max-width: 72rem;
     margin: 0 auto;
-    padding: 0 clamp(1.25rem, 7vw, 7rem) 4rem;
+    padding: 0 clamp(1.25rem, 5vw, 4rem) 4rem;
     color: var(--home-muted);
     font-size: .76rem;
     line-height: 1.7;
@@ -365,14 +377,19 @@ code,
 pre {
     font-family: "JetBrains Mono", "SF Mono", monospace;
 }
- /* ========= Margin ========= */
- .md-grid {
-    max-width: 100%;
+/* ========= Layout ========= */
+
+.md-grid,
+.md-main__inner {
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.md-main__inner {
-    max-width: 100%;
-    margin: 0;
+.md-content:not(:has(.home-page)) .md-content__inner {
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .md-sidebar--primary {
