@@ -75,3 +75,4 @@ extra_css:
 extra_javascript:
   - https://unpkg.com/aos@2.3.1/dist/aos.js
   - javascripts/init-aos.js
+  - javascripts/sidebar-toggle.js
