@@ -396,6 +396,14 @@ pre {
     margin-right: auto;
 }
 
+body.sidebar-secondary-collapsed .md-content:not(:has(.home-page)) .md-content__inner {
+    max-width: 72rem;
+}
+
+body.sidebar-primary-collapsed.sidebar-secondary-collapsed .md-content:not(:has(.home-page)) .md-content__inner {
+    max-width: 82rem;
+}
+
 .md-sidebar--primary {
     margin-left: 0;
 }
